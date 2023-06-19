@@ -42,11 +42,13 @@ Here's an example `config.toml` file:
 p4port = "ssl:perforce.example.com:1667"
 p4user = "user"
 p4client = "user-UE4-Release-Latest-Minimal" # this needs to exist before running p4harmonize
+p4charset = "none"
 
 # destination is the perforce server you want to update so that it matches the source
 [destination]
 p4port = "perforce.local:1666"
 p4user = "localuser"
+p4charset = "none"
 new_client_name = "localuser-harmonize"   # this will be created by p4harmonize
 new_client_root = "d:/p4/local/harmonize" # this will be created by p4harmonize
 new_client_stream = "//test/engine_epic"  # this needs to already exist

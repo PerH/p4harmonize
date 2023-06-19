@@ -10,14 +10,16 @@ import (
 )
 
 type Source struct {
-	P4Port   string `toml:"p4port"`
-	P4User   string `toml:"p4user"`
-	P4Client string `toml:"p4client"`
+	P4Port    string `toml:"p4port"`
+	P4User    string `toml:"p4user"`
+	P4Client  string `toml:"p4client"`
+	P4Charset string `toml:"p4charset"`
 }
 
 type Destination struct {
 	P4Port       string `toml:"p4port"`
 	P4User       string `toml:"p4user"`
+	P4Charset    string `toml:"p4charset"`
 	ClientName   string `toml:"new_client_name"`
 	ClientRoot   string `toml:"new_client_root"`
 	ClientStream string `toml:"new_client_stream"`
